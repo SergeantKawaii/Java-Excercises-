@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Divisibleby5 {
+
+    public static void main(String[] args) {
+        System.out.print("Enter Number: ");
+       Scanner scanner = new Scanner(System.in);
+         int num = scanner.nextInt();
+         int fizz = 5;
+         int buzz = 3;
+         int fizzbuzz = 15;
+
+
+        boolean fizz1 = (num % fizz) == 0;
+        boolean buzz1 = (num % buzz) == 0; // the 0 is the remainder
+
+        if (buzz1 & fizz1 == true){
+            System.out.println("FizzBuzz");
+        }
+        else if (fizz1 == true){
+          System.out.println("Fizz");
+        }
+        else if (buzz1 == true){
+            System.out.println("Buzz");
+        }
+        else
+            System.out.println(num);
+    }
+}
+
+
+
+//         switch (fizz % num) {
+//        case 1: System.out.println("fizz");
+//     break;
+//       case (buzz % num) : {
+
+//     }
+//}
